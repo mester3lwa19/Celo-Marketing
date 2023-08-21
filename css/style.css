@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/infinite-beyond");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inria Sans", sans-serif;
+  height: 4000px;
+  background-color: #fff;
+}
+
+.headline {
+  background: linear-gradient(90deg, rgb(177, 71, 165) 0%, rgb(0, 125, 254) 70%);
+  font-size: 80px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* header */
+nav {
+  background-color: #4A29D0;
+  font-family: "Infinite Beyond", sans-serif;
+  letter-spacing: 2px;
+}
+nav .navbar-brand {
+  color: #fff;
+}
+nav .navbar-brand span {
+  margin-top: px;
+}
+@media (max-width: 400px) {
+  nav .navbar-brand {
+    font-size: 12px;
+  }
+}
+nav .navbar-brand img {
+  width: 60px;
+  height: 50px;
+}
+@media (max-width: 400px) {
+  nav .navbar-brand img {
+    width: 40px;
+    height: 30px;
+  }
+}
+nav .navbar-toggler {
+  color: #fff;
+  background-color: #fff;
+}
+nav ul li .nav-link {
+  color: #fff;
+}
+nav ul li .contact {
+  color: #4A29D0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 992px) {
+  nav ul li .contact {
+    width: 150px;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+/* end header */
+/* start hero */
+.hero {
+  position: relative;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fbfbfb;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+@media (max-width: 991px) {
+  .hero:before {
+    height: 300px;
+  }
+}
+.hero .container-xl .content {
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .hero .container-xl .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+    top: 50px;
+  }
+}
+.hero .container-xl .content h1 {
+  font-size: 60px;
+}
+.hero .container-xl .content h1 span {
+  background: linear-gradient(90deg, rgb(177, 71, 165) 0%, rgb(0, 125, 254) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+@media (max-width: 991px) {
+  .hero .container-xl .content h1 {
+    font-size: 40px;
+  }
+}
+.hero .container-xl .content p {
+  font-size: 15px;
+  color: #231942;
+}
+@media (max-width: 991px) {
+  .hero .container-xl .content p {
+    font-size: 10px;
+    width: 100%;
+  }
+}
+.hero .container-xl .image {
+  margin-left: 100px;
+}
+@media (max-width: 991px) {
+  .hero .container-xl .image {
+    display: none;
+  }
+}
+.hero .container-xl .image img {
+  max-width: 100%;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
+}
+
+/* end hero */
+/* start services */
+.services {
+  margin-top: 400px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .services {
+    margin-top: 250px;
+  }
+}
+.services h1 {
+  margin-bottom: 80px;
+}
+.services .image img {
+  width: 250px;
+  height: 250px;
+}
+.services .ads h2 {
+  text-align: center;
+  color: #8C96E0;
+}
+.services .email h2 {
+  text-align: center;
+  color: #00DFC0;
+}
+.services .ai h2 {
+  text-align: center;
+  color: #8558F8;
+}
+.services .editing {
+  margin-top: 30px;
+}
+.services .editing .image img {
+  width: 200px;
+  height: 200px;
+}
+.services .editing h2 {
+  text-align: center;
+  color: #D268CC;
+  margin-top: 30px;
+}
+.services .editing {
+  margin-top: 30px;
+}
+.services .editing .image img {
+  width: 150px;
+  height: 150px;
+}
+.services .editing h2 {
+  text-align: center;
+  color: #D268CC;
+  margin-top: 30px;
+}
+.services .seo {
+  margin-top: 30px;
+}
+@media (min-width: 576px) {
+  .services .seo .image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.services .seo h2 {
+  text-align: center;
+  color: #017BFD;
+  margin-top: -10px;
+}
+.services .instagram {
+  margin-top: 60px;
+}
+.services .instagram .image img {
+  width: 120px;
+  height: 120px;
+}
+.services .instagram h2 {
+  text-align: center;
+  color: #017BFD;
+  margin-top: 30px;
+  background: linear-gradient(90deg, rgb(132, 212, 255) 0%, rgb(231, 130, 252) 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* end services */
+/* start about */
+.about {
+  margin-top: 200px;
+}
+@media (max-width: 576px) {
+  .about {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 60px;
+  }
+}
+.about .text {
+  margin-top: 50px;
+  height: 300px;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .text h2 {
+  font-size: 30px;
+}
+@media (max-width: 576px) {
+  .about .text h2 {
+    font-size: 20px;
+  }
+}
+.about .text p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #231942;
+}
+@media (max-width: 576px) {
+  .about .text p {
+    font-size: 16px;
+  }
+}
+
+/* end about */
+/* start offer */
+.offer {
+  margin-top: 200px;
+}
+@media (max-width: 576px) {
+  .offer h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+.offer .content {
+  margin-top: 50px;
+}
+.offer .content .row .col .card {
+  margin-top: 20px;
+  width: 500px;
+  height: 350px;
+  background-color: #007DFE;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .offer .content .row .col .card {
+    width: 100%;
+  }
+}
+.offer .content .row .col .card .image img {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .offer .content .row .col .card .image img {
+    margin-top: 20px;
+  }
+}
+.offer .content .row .col .card h2 {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+.offer .content .client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*end offer */
+/* Start Animation */
+@keyframes up-and-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -30px;
+  }
+}/*# sourceMappingURL=style.css.map */

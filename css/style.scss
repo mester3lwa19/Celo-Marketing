@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/infinite-beyond');
+
+
+$header-color:#4A29D0;
+$text-gradiant:linear-gradient(90deg, rgba(177,71,165,1) 0%, rgba(0,125,254,1) 70%);
+$insta-gradiant:linear-gradient(90deg, rgba(132,212,255,1) 0%, rgba(231,130,252,1) 30%);
+$ads:#8C96E0;
+$email:#00DFC0;
+$ai:#8558F8;
+$editing:#D268CC;
+$seo:#017BFD;
+$p-color:#231942;
+$cards-blue:#007DFE;
+$header-font:'Infinite Beyond', sans-serif;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Inria Sans', sans-serif;
+    height: 4000px;
+    background-color: #fff;
+}
+.headline {
+    background: $text-gradiant;
+    font-size: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+// .instagram {
+//     background: $insta-gradiant;
+//     font-family: var(--header-font);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent; 
+//     -moz-background-clip: text;
+//     -moz-text-fill-color: transparent;
+// }
+/* header */
+nav {
+    background-color: $header-color;
+    font-family: $header-font;
+    letter-spacing: 2px;
+    .navbar-brand {
+        color: #fff;
+        span {
+            margin-top: px;
+        }
+        @media (max-width:400px) {
+            font-size: 12px;
+        }
+        img {
+            width: 60px;
+            height: 50px;
+            @media (max-width:400px) {
+                width: 40px;
+                height: 30px;
+            }
+        }
+    }
+    .navbar-toggler {
+        color: #fff;
+        background-color: #fff;
+    }
+    ul {
+        li {
+            .nav-link {
+                color: #fff;
+            }
+            .contact {
+                color: $header-color;
+                background-color: #fff;
+                border-radius: 10px;
+                @media (max-width:992px) {
+                    width: 150px;
+                    padding: 5px;
+                    display: inline-block;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+} 
+/* end header */
+
+/* start hero */
+.hero {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -40px;
+        width: 100%;
+        height: 100vh;
+        background-color: #fbfbfb;
+        z-index: -1;
+        transform: skewY(-6deg);
+        transform-origin: top left;
+    }
+    @media (max-width: 991px) {
+        &:before {
+            height: 300px;
+        }
+    }
+    .container-xl {
+
+        .content {
+            text-align: center;
+            width: 100%;
+            @media (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 50px;
+                top: 50px;
+            }
+            h1 {
+                font-size: 60px;
+                span {
+                    background: $text-gradiant;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    -moz-background-clip: text;
+                    -moz-text-fill-color: transparent;
+                }
+                @media (max-width: 991px) {
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-size: 15px;
+                color: $p-color;
+                @media (max-width: 991px) {
+                    font-size: 10px;
+                    width: 100%;
+                }
+            }
+        }
+        .image {
+            // width: 20%;
+            @media (max-width: 991px) {
+                display: none;
+            }
+            margin-left: 100px;
+            img {
+                // width: 200px;
+                max-width: 100%;
+                position: relative;
+                animation: up-and-down 5s linear infinite;
+            }
+        }
+    }
+}
+
+
+/* end hero */
+
+/* start services */
+.services {
+    margin-top: 400px;
+    text-align: center;
+    @media (max-width:576px) {
+            margin-top: 250px;
+        }
+    h1 {
+        margin-bottom: 80px;
+    }
+    .image img {
+        width: 250px;
+        height: 250px;
+    }
+    .ads {
+        h2 {
+            text-align: center;
+            color: $ads;
+        }
+    }
+    .email {
+        h2 {
+            text-align: center;
+            color: $email;
+        }
+    }
+    .ai {
+        h2 {
+            text-align: center;
+            color: $ai;
+        }
+    }
+    .editing {
+        margin-top: 30px;
+        .image img {
+            width: 200px;
+            height: 200px;
+        }
+        h2 {
+            text-align: center;
+            color: $editing;
+            margin-top: 30px;
+        }
+    }
+    .editing {
+        margin-top: 30px;
+        .image img {
+            width: 150px;
+            height: 150px;
+        }
+        h2 {
+            text-align: center;
+            color: $editing;
+            margin-top: 30px;
+        }
+    }
+    .seo {
+        margin-top: 30px;
+        .image img {
+            // width: 200px;
+            // height: 200px;
+        @media (min-width:576px) {
+            width: 200px;
+            height: 200px;
+        }
+        }
+        h2 {
+            text-align: center;
+            color: $seo;
+            margin-top: -10px;
+        }
+    }
+    .instagram {
+        margin-top: 60px;
+        .image img {
+            width: 120px;
+            height: 120px;
+        }
+        h2 {
+            text-align: center;
+            color: $seo;
+            margin-top: 30px;
+            background: $insta-gradiant;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+    }
+}
+/* end services */
+
+/* start about */
+    .about {
+        margin-top: 200px;
+    @media (max-width:576px) {
+        margin-top: 150px;
+            text-align: center;
+            h1 {
+                font-size: 60px;
+            }
+        }
+        .text {
+            margin-top: 50px;
+            height: 300px;
+            background-color: #fbfbfb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 30px;
+                @media (max-width:576px) {
+                    font-size: 20px;
+                }
+            }
+            p {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 18px;
+                color: $p-color;
+                @media (max-width:576px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+/* end about */
+
+/* start offer */
+.offer {
+    margin-top: 200px;
+    h1 {
+        @media (max-width:576px) {
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+
+    .content {
+        margin-top: 50px;
+        .row {
+            
+            .col {
+                .card {
+                    margin-top: 20px;
+                    width: 500px;
+                    height: 350px;
+                    background-color: $cards-blue;
+                    text-align: center;
+                    @media (max-width:576px) {
+                        width: 100%;
+                    }
+                    .image img{
+                        width: 250px;
+                        height: 250px;
+                        text-align: center;
+                        @media (max-width:576px) {
+                            margin-top: 20px;
+                        }
+                        }
+                        h2 {
+                            color: #fff;
+                            margin-top: 20px;
+                            text-align: center;
+                        }
+                    }
+            }
+
+        }
+        .client {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+}
+/*end offer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Animation */
+
+@keyframes up-and-down {
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: -30px;
+    }
+}
