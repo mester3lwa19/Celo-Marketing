@@ -10,4 +10,11 @@ const observer = new IntersectionObserver((entires)=> {
     })
 });
 const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el)=> observer.observe(el))
+hiddenElements.forEach((el)=> observer.observe(el));
+// hiddenElements.forEach((el)=> {
+//     el.addEventListener("mouseover",(el) => {
+//         el.target.classList.toggle(".hidden");
+//         el.target.classList.toggle(".show");
+//         el.target.classList.toggle(".element");
+//     })
+// });
