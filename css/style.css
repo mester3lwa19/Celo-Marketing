@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Inria Sans", sans-serif;
-  height: 4000px;
   background-color: #fff;
 }
 
@@ -233,6 +232,24 @@ nav ul li .contact {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+.services .element:nth-child(1) {
+  transition-delay: 200ms;
+}
+.services .element:nth-child(2) {
+  transition-delay: 400ms;
+}
+.services .element:nth-child(3) {
+  transition-delay: 600ms;
+}
+.services .element:nth-child(4) {
+  transition-delay: 800ms;
+}
+.services .element:nth-child(5) {
+  transition-delay: 1000ms;
+}
+.services .element:nth-child(6) {
+  transition-delay: 1200ms;
+}
 
 /* end services */
 /* start about */
@@ -322,8 +339,101 @@ nav ul li .contact {
   align-items: center;
   justify-content: center;
 }
+.offer .element:nth-child(1) {
+  transition-delay: 200ms;
+}
+.offer .element:nth-child(2) {
+  transition-delay: 600ms;
+}
+.offer .element:nth-child(3) {
+  transition-delay: 1000ms;
+}
 
 /*end offer */
+/* eager */
+.eager {
+  margin-top: 200px;
+}
+@media (max-width: 576px) {
+  .eager {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .eager h1 {
+    font-size: 40px;
+  }
+}
+.eager .text {
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.eager .text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  height: 250px;
+  background-color: #fbfbfb;
+  z-index: -1;
+  transform: skewY(-3deg);
+  transform-origin: top left;
+}
+@media (max-width: 576px) {
+  .eager .text:before {
+    height: 200px;
+  }
+}
+.eager .text p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  width: 50%;
+  color: #231942;
+}
+@media (max-width: 576px) {
+  .eager .text p {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+/* eager */
+/* start footer */
+footer {
+  margin-top: 200px;
+  background-color: #4A29D0;
+  color: #fff;
+}
+footer .content {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+}
+@media (max-width: 576px) {
+  footer .content {
+    font-size: 10px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(3px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* end footer */
 /* Start Animation */
 @keyframes up-and-down {
   0%, 100% {
