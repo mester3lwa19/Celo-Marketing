@@ -15,11 +15,15 @@ body {
 
 .headline {
   background: linear-gradient(90deg, rgb(177, 71, 165) 0%, rgb(0, 125, 254) 70%);
-  font-size: 60px;
+  font-size: 50px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+.self-active {
+  color: #ff00f2 !important;
 }
 
 /* header */
@@ -35,6 +39,9 @@ nav {
 nav .navbar-brand {
   color: #fff;
   font-size: 12px;
+}
+nav .navbar-brand:hover {
+  color: #ff00f2;
 }
 @media (max-width: 400px) {
   nav .navbar-brand {
@@ -56,7 +63,21 @@ nav .navbar-toggler {
   background-color: #fff;
 }
 nav ul li .nav-link {
+  cursor: pointer !important;
   color: #fff;
+}
+nav ul li .nav-link .active-flag {
+  opacity: 100%;
+}
+nav ul li .nav-link img:first-of-type {
+  width: 20px;
+  height: 20px;
+}
+nav ul li .nav-link img:last-of-type {
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  opacity: 70%;
 }
 nav ul li .nav-link:hover {
   color: #ff00f2;
@@ -65,6 +86,7 @@ nav ul li .contact {
   color: #4A29D0;
   background-color: #fff;
   border-radius: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 992px) {
   nav ul li .contact {
@@ -80,22 +102,27 @@ nav ul li .contact {
 /* start hero */
 .hero {
   position: relative;
+  top: 80px;
 }
 .hero:before {
   content: "";
   position: absolute;
   left: 0;
-  top: -40px;
+  top: 80px;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #fbfbfb;
   z-index: -1;
-  transform: skewY(-6deg);
+  transform: skewY(-2deg);
   transform-origin: top left;
 }
 @media (max-width: 991px) {
+  .hero {
+    top: 40px;
+  }
   .hero:before {
     height: 300px;
+    top: 50px;
   }
 }
 .hero .container-xl .content {
@@ -111,6 +138,7 @@ nav ul li .contact {
     position: relative;
     left: 50px;
     top: 50px;
+    margin-top: 30px;
   }
 }
 .hero .container-xl .content h1 {
@@ -123,6 +151,7 @@ nav ul li .contact {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  display: inline-block;
 }
 @media (max-width: 991px) {
   .hero .container-xl .content h1 {
@@ -159,7 +188,7 @@ nav ul li .contact {
 /* start services */
 .services {
   padding: 10px;
-  margin-top: 400px;
+  margin-top: 350px;
   text-align: center;
   /* ads */
   /* email */
@@ -361,6 +390,10 @@ nav ul li .contact {
   min-height: 300px;
   margin-right: 5px;
 }
+.seo .image img {
+  width: 250px !important;
+  height: 250px !important;
+}
 @media (min-width: 576px) {
   .seo .image img {
     width: 200px;
@@ -370,7 +403,7 @@ nav ul li .contact {
 .seo h2 {
   text-align: center;
   color: #017BFD !important;
-  margin-top: 20px;
+  margin-top: -10px;
 }
 @media (max-width: 576px) {
   .seo {
@@ -414,13 +447,13 @@ nav ul li .contact {
   margin-top: 30px;
 }
 .social .image img {
-  width: 200px;
-  height: 200px;
+  width: 250px !important;
+  height: 250px !important;
 }
 .social h2 {
   text-align: center;
   color: #057df6 !important;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 @media (max-width: 576px) {
   .social {
@@ -677,5 +710,15 @@ footer .content {
   }
   50% {
     top: -30px;
+  }
+}
+@keyframes cursoreffect {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
