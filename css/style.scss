@@ -55,6 +55,13 @@ nav {
     position: fixed !important;
     z-index: 999;
     width: 100%;
+    .nav-link {
+        color: #fff;
+        margin-top: -7px;
+        &:hover {
+            color:#ff00f2;
+        }
+    }
     .navbar-brand {
         color: #fff;
         font-size: 12px;
@@ -75,6 +82,7 @@ nav {
                 height: 30px;
             }
         }
+
     }
     .navbar-toggler {
         color: #fff;
@@ -577,7 +585,7 @@ nav {
             .col {
                 .card {
                     margin-top: 20px;
-                    width: 500px;
+                    width: 350px;
                     height: 350px;
                     background-color: $cards-blue;
                     text-align: center;
@@ -585,8 +593,8 @@ nav {
                         width: 100%;
                     }
                     .image img{
-                        width: 250px;
-                        height: 250px;
+                        width: 150px;
+                        height: 150px;
                         text-align: center;
                         @media (max-width:576px) {
                             margin-top: 20px;

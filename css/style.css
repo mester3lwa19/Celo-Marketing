@@ -36,6 +36,13 @@ nav {
   z-index: 999;
   width: 100%;
 }
+nav .nav-link {
+  color: #fff;
+  margin-top: -7px;
+}
+nav .nav-link:hover {
+  color: #ff00f2;
+}
 nav .navbar-brand {
   color: #fff;
   font-size: 12px;
@@ -575,7 +582,7 @@ nav ul li .contact {
 }
 .offer .content .row .col .card {
   margin-top: 20px;
-  width: 500px;
+  width: 350px;
   height: 350px;
   background-color: #007DFE;
   text-align: center;
@@ -586,8 +593,8 @@ nav ul li .contact {
   }
 }
 .offer .content .row .col .card .image img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   text-align: center;
 }
 @media (max-width: 576px) {
