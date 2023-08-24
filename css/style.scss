@@ -59,6 +59,8 @@ nav {
         color: #fff;
         margin-top: -7px;
         margin-left: 20px;
+        font-family: 'Arial' !important;
+        font-weight:1000;
         &:hover {
             color:#ff00f2;
         }
@@ -603,7 +605,7 @@ nav {
                     }
                     .image img{
                         width: 150px;
-                        height: 50px;
+                        height: 150px;
                         text-align: center;
                         @media (max-width:576px) {
                             margin-top: 20px;
