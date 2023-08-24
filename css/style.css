@@ -36,6 +36,14 @@ nav {
   z-index: 999;
   width: 100%;
 }
+nav .lang {
+  color: #fff;
+  margin-top: -7px;
+  margin-left: 20px;
+}
+nav .lang:hover {
+  color: #ff00f2;
+}
 nav .nav-link {
   color: #fff;
   margin-top: -7px;
@@ -594,7 +602,7 @@ nav ul li .contact {
 }
 .offer .content .row .col .card .image img {
   width: 150px;
-  height: 150px;
+  height: 50px;
   text-align: center;
 }
 @media (max-width: 576px) {

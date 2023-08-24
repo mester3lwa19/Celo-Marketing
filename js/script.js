@@ -33,9 +33,7 @@ Naveager.addEventListener("click", ()=> {
     window.scrollTo(0,3420)
 })
 
-/* two language */
-let welcome = document.getElementById("welcome"),
-    HeroP = document.getElementById("hero-p")
+window.botpressWebChat.sendEvent({ type: "show" });
 
 
 
@@ -47,22 +45,3 @@ let welcome = document.getElementById("welcome"),
 
 
 
-
-// /* active navlink on scroll */
-// let sections = document.querySelectorAll("section");
-// let navlinks = document.querySelectorAll("nav a");
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop -150;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute("id");
-        
-//         if(top >= offset && top < offset + height) {
-//             navlinks.forEach(links => {
-//                 links.classList.remove("self-active");
-//                 document.querySelector('nav a[href*=' + id + ']').classList.add("self-active");
-//             })
-//         }
-//     })
-// }
