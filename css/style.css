@@ -618,6 +618,8 @@ nav ul li .contact {
 @media (max-width: 576px) {
   .offer .content .row .col .card .image img {
     margin-top: 20px;
+    width: 250px;
+    height: 250px;
   }
 }
 .offer .content .row .col .card h2 {
