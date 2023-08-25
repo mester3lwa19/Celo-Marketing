@@ -42,13 +42,20 @@ nav .lang {
   margin-left: 20px;
   font-family: "Arial" !important;
   font-weight: 1000;
+  font-size: 17px;
 }
 nav .lang:hover {
   color: #ff00f2;
 }
+@media (max-width: 576px) {
+  nav .lang {
+    margin-top: 1px !important;
+  }
+}
 nav .nav-link {
   color: #fff;
   margin-top: -7px;
+  cursor: pointer;
 }
 nav .nav-link:hover {
   color: #ff00f2;
@@ -60,16 +67,17 @@ nav .navbar-brand {
 nav .navbar-brand:hover {
   color: #ff00f2;
 }
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   nav .navbar-brand {
     font-size: 12px;
+    margin-right: -90px;
   }
 }
 nav .navbar-brand img {
   width: 50px;
   height: 40px;
 }
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   nav .navbar-brand img {
     width: 40px;
     height: 30px;

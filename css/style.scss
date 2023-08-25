@@ -61,13 +61,18 @@ nav {
         margin-left: 20px;
         font-family: 'Arial' !important;
         font-weight:1000;
+        font-size: 17px;
         &:hover {
             color:#ff00f2;
+        }
+        @media (max-width:576px) {
+            margin-top: 1px !important;
         }
     }
     .nav-link {
         color: #fff;
         margin-top: -7px;
+        cursor: pointer;
         &:hover {
             color:#ff00f2;
         }
@@ -75,20 +80,21 @@ nav {
     .navbar-brand {
         color: #fff;
         font-size: 12px;
-
         &:hover {
             color:#ff00f2;
         }
         // span {
         //     margin-top: px;
         // }
-        @media (max-width:400px) {
+        @media (max-width:576px) {
             font-size: 12px;
+            margin-right: -90px;
+
         }
         img {
             width: 50px;
             height: 40px;
-            @media (max-width:400px) {
+            @media (max-width:576px) {
                 width: 40px;
                 height: 30px;
             }

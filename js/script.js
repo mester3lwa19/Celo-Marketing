@@ -33,7 +33,14 @@ Naveager.addEventListener("click", ()=> {
     window.scrollTo(0,3420)
 })
 
-window.botpressWebChat.sendEvent({ type: "show" });
+
+
+
+/* Ai */
+document.getElementById('showButton').addEventListener('click', function() {
+    console.log("showing bot...")
+    window.botpressWebChat.sendEvent({ type: "show" })
+});
 
 
 
