@@ -34,8 +34,17 @@ Naveager.addEventListener("click", ()=> {
 })
 
 
-
-
+if (window.innerWidth <= 699) {
+    navServices.addEventListener("click", ()=> {
+        window.scrollTo(0,375)
+    })
+    navAbout.addEventListener("click", ()=> {
+        window.scrollTo(0,2530)
+    })
+    Naveager.addEventListener("click", ()=> {
+        window.scrollTo(0,4215)
+    })
+}
 /* Ai */
 document.getElementById('showButton').addEventListener('click', function() {
     console.log("showing bot...")
