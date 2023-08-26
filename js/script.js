@@ -49,6 +49,16 @@ if (window.innerWidth <= 699) {
 document.getElementById('showButton').addEventListener('click', function() {
     console.log("showing bot...")
     window.botpressWebChat.sendEvent({ type: "show" })
+    document.getElementById('navbarNavDropdown').classList.add("hideNav");
+});
+
+
+/* toggle */
+ document.getElementById('navbar-toggler').addEventListener('click', ()=> {
+    console.log("Clicked")
+    document.getElementById('navbarNavDropdown').classList.remove("hideNav");
+    window.botpressWebChat.sendEvent({ type: "hide" })
+
 });
 
 

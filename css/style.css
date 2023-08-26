@@ -753,6 +753,10 @@ footer .content {
   transform: translateX(0);
 }
 
+.hideNav {
+  display: none !important;
+}
+
 /* end footer */
 /* Start Animation */
 @keyframes up-and-down {
