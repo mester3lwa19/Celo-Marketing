@@ -111,7 +111,7 @@ nav ul li .contact {
   color: #4A29D0;
   background-color: #fff;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 @media (max-width: 992px) {
   nav ul li .contact {
@@ -121,6 +121,27 @@ nav ul li .contact {
     margin-top: 5px;
     text-align: center;
   }
+}
+nav .dropdown {
+  color: #fff;
+}
+@media (max-width: 576px) {
+  nav .dropdown {
+    margin-top: 20px;
+  }
+}
+nav .dropdown .fa-globe:hover {
+  color: #ff00f2 !important;
+}
+nav .dropdown .dropdown-menu {
+  background-color: #4A29D0 !important;
+  margin-left: -10px;
+}
+nav .dropdown .dropdown-menu li a {
+  color: #fff !important;
+}
+nav .dropdown .dropdown-menu li a:hover {
+  color: #ff00f2 !important;
 }
 
 /* end header */
@@ -608,6 +629,7 @@ nav ul li .contact {
 @media (max-width: 576px) {
   .offer .content .row .col .card {
     width: 100%;
+    height: 300px;
   }
 }
 .offer .content .row .col .card .image img {
@@ -618,8 +640,8 @@ nav ul li .contact {
 @media (max-width: 576px) {
   .offer .content .row .col .card .image img {
     margin-top: 20px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
 }
 .offer .content .row .col .card h2 {
@@ -702,7 +724,7 @@ nav ul li .contact {
 /* start footer */
 footer {
   margin-top: 200px;
-  background-color: #4A29D0;
+  background-color: #4A29D0 !important;
   color: #fff;
 }
 footer .content {
