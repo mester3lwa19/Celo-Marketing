@@ -136,6 +136,8 @@ nav .dropdown .fa-globe:hover {
 nav .dropdown .dropdown-menu {
   background-color: #4A29D0 !important;
   margin-left: -10px;
+  left: -60px;
+  top: 30px;
 }
 nav .dropdown .dropdown-menu li a {
   color: #fff !important;
