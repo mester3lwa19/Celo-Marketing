@@ -115,7 +115,8 @@ nav ul li .contact {
 }
 @media (max-width: 992px) {
   nav ul li .contact {
-    width: 75px;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 5px;
     display: inline-block;
     margin-top: 5px;
@@ -138,9 +139,11 @@ nav .dropdown .dropdown-menu {
   margin-left: -10px;
   left: -60px;
   top: 30px;
+  border: none;
 }
 nav .dropdown .dropdown-menu li a {
   color: #fff !important;
+  font-size: 12px !important;
 }
 nav .dropdown .dropdown-menu li a:hover {
   color: #ff00f2 !important;
