@@ -115,11 +115,11 @@ nav ul li .contact {
 }
 @media (max-width: 992px) {
   nav ul li .contact {
-    width: 150px;
+    width: 75px;
     padding: 5px;
     display: inline-block;
     margin-top: 5px;
-    text-align: center;
+    text-align: left;
   }
 }
 nav .dropdown {
